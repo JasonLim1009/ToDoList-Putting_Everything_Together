@@ -1,0 +1,89 @@
+- Mongoose schema
+const <schemaName> = {
+  <fieldName> : <FieldDataType>,
+  ...
+  }
+
+
+
+- Mongoose Model
+const = mongoose.model(
+  <'SingularCollectionName'>,
+  <schemaName>
+  );
+
+
+
+- Mongoose Document
+const <constantName> = new <ModelName> ({
+  <fieldName> : <fieldData>
+  ...
+  });
+
+
+
+- Mongoose insertMany()
+<ModelName>.insertMany(<documentArray>, function(err) {
+  //Deal with error or log success.
+  });
+
+
+
+// 343
+- Mongoose find()
+<ModelName>.find({conditions}, function(err, results) {
+  //Use the found results docs.
+  });
+
+
+
+- Javascript ES6 forEach()
+<array>.forEach(function(<singleArrayItem>) {
+  //Use each singleArrayItem
+  });
+
+
+
+// 345
+- Mongoose findByIdAndRemove()
+<ModelName>.findByIdAndRemove(<Id>, function(err) {
+  //Handle any errors or log success.
+  });
+
+
+
+// 346
+- Express Route Parameters
+app.get('/category/:<paramName>', function(req, res) {
+  //Access req.params.paramName
+  });
+
+
+
+- Mongoose findOne()
+<ModelName>.find({conditions}, function(err, results) {
+  //Use the found results docs.
+  });
+
+
+
+// 348
+- Mongoose findOneAndUpdate()
+<ModelName>.findOneAndUpdate(
+	{conditions}, 
+	{updates},
+	function(err, result){}
+  );
+
+<ModelName>.findOneAndUpdate(
+	{conditions}, 
+	{$pull: {field: {query}}},
+	function(err, result){}
+  );
+
+
+
+
+
+
+
